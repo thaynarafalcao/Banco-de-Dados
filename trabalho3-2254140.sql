@@ -107,7 +107,6 @@ VALUE ('951620', 'chat', 'rastrear pedido');
 
 
 
-
 INSERT INTO jogos (codigo_jogo, nome, tentativas)
 VALUE ('ci5qhvrvhub', 'recompensas diarias', '1');
 INSERT INTO jogos (codigo_jogo, nome, tentativas)
@@ -128,6 +127,7 @@ INSERT INTO jogos (codigo_jogo, nome, tentativas)
 VALUE ('8x94r8vvnhe', '7 erros', '3');
 INSERT INTO jogos (codigo_jogo, nome, tentativas)
 VALUE ('8x94r8vvnhf', 'carrinho fast', '3');
+
 
 INSERT INTO clientes (nome, email, telefone, n_protocolo)
 VALUE ('thaynara ribeiro', 'thaynararibeiro@hotmail.com', '99277712', '123456789');
@@ -263,7 +263,7 @@ INSERT INTO produtos (id_produto, categoria, preco, id_compra, n_cnpj)
 VALUE ('25836914700', 'maquiagem', '50.00','649122','08580860000153');
 
 INSERT INTO transportadoras (nome_empresa, veiculos, embalagem)
-VALUE ('Brasspress Transportes Urgentes', 'caminhao', 'caixa');
+VALUE ('Brasspress Transportes', 'caminhao', 'caixa');
 INSERT INTO transportadoras (nome_empresa, veiculos, embalagem)
 VALUE ('Jamef Transportes', 'caminhao', 'pacote');
 INSERT INTO transportadoras (nome_empresa, veiculos, embalagem)
@@ -328,10 +328,87 @@ INSERT INTO pessoa_juridica (cnpj, endereco, data_nascimento, nome)
 VALUE ('142536635', '08640794934', '24-03-01', 'eduarda bassalobre');
 
 
+INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
+VALUE ( 'Sul Brasil', 'eduarda bassalobre');
+INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
+VALUE ( 'Transmedeiros', 'andre lettrari');
+INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
+VALUE ( 'Patrus', 'enzo italiano');
+INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
+VALUE ( 'Correios', 'thaynara ribeiro');
+INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
+VALUE ( 'Plimor', 'henrique marcuzzo');
+INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
+VALUE ( 'Mercado Livre', 'jesse pires');
+INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
+VALUE ( 'Express', 'breno silva');
+INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
+VALUE ( 'Sequoia', 'rafael berti');
+INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
+VALUE ( 'Jamef Transportes', 'thais falcao');
+INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
+VALUE ( 'Brasspress Transportes', 'reginaldo silva');
 
 
+INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
+VALUE ( 'ci5qhvrvhub', 'jhenyfeer polonio');
+INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
+VALUE ( 'p2ce6w73kxf', 'breno silva');
+INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
+VALUE ( 'evhwkp3gqbt', 'eduarda galhardo');
+INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
+VALUE ( 'syppe4xjud3', 'vitor galafassi');
+INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
+VALUE ( 'f5pxddti29j', 'jesse pires');
+INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
+VALUE ( '8x94r8vvnhb', 'enzo italiano');
+INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
+VALUE ( '8x94r8vvnhc', 'henrique marcuzzo');
+INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
+VALUE ( '8x94r8vvnhd', 'thais falcao');
+INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
+VALUE ( '8x94r8vvnhe', 'thaynara ribeiro');
+INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
+VALUE ( '8x94r8vvnhf', 'rafael berti');
 
+INSERT INTO func_desenvolvem_jogos (cod_jogo, cpf_funcionario)
+VALUE ( 'ci5qhvrvhub', '08640794944');
+INSERT INTO func_desenvolvem_jogos (cod_jogo, cpf_funcionario)
+VALUE ( 'p2ce6w73kxf', '08640794945');
+INSERT INTO func_desenvolvem_jogos (cod_jogo, cpf_funcionario)
+VALUE ( 'evhwkp3gqbt', '08640794946');
+INSERT INTO func_desenvolvem_jogos (cod_jogo, cpf_funcionario)
+VALUE ( 'syppe4xjud3', '08640794947');
+INSERT INTO func_desenvolvem_jogos (cod_jogo, cpf_funcionario)
+VALUE ( 'f5pxddti29j', '08640794948');
+INSERT INTO func_desenvolvem_jogos (cod_jogo, cpf_funcionario)
+VALUE ( '8x94r8vvnhb', '08640794949');
+INSERT INTO func_desenvolvem_jogos (cod_jogo, cpf_funcionario)
+VALUE ( '8x94r8vvnhc', '08640794950');
+INSERT INTO func_desenvolvem_jogos (cod_jogo, cpf_funcionario)
+VALUE ( '8x94r8vvnhd', '08640794951');
+INSERT INTO func_desenvolvem_jogos (cod_jogo, cpf_funcionario)
+VALUE ( '8x94r8vvnhe', '08640794952');
+INSERT INTO func_desenvolvem_jogos (cod_jogo, cpf_funcionario)
+VALUE ( '8x94r8vvnhf', '08640794953');
 
-
-
-
+INSERT INTO func_trabalham_em_sup(cpf_funcionario, n_protocolo)
+VALUE ( '08640794944', '123123');
+INSERT INTO func_trabalham_em_sup(cpf_funcionario, n_protocolo)
+VALUE ( '08640794945', '123456');
+INSERT INTO func_trabalham_em_sup(cpf_funcionario, n_protocolo)
+VALUE ( '08640794946', '123789');
+INSERT INTO func_trabalham_em_sup(cpf_funcionario, n_protocolo)
+VALUE ( '08640794947', '321654');
+INSERT INTO func_trabalham_em_sup(cpf_funcionario, n_protocolo)
+VALUE ( '08640794948', '321987');
+INSERT INTO func_trabalham_em_sup(cpf_funcionario, n_protocolo)
+VALUE ( '08640794949', '741852');
+INSERT INTO func_trabalham_em_sup(cpf_funcionario, n_protocolo)
+VALUE ( '08640794950', '258147');
+INSERT INTO func_trabalham_em_sup(cpf_funcionario, n_protocolo)
+VALUE ( '08640794951', '963852');
+INSERT INTO func_trabalham_em_sup(cpf_funcionario, n_protocolo)
+VALUE ( '08640794952', '987654');
+INSERT INTO func_trabalham_em_sup(cpf_funcionario, n_protocolo)
+VALUE ( '08640794953', '951620');
