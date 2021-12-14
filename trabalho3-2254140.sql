@@ -41,25 +41,25 @@ INSERT INTO funcionarios (CPF, RG, salario)
 VALUE ('08640794953', '144868039', '5000');
 
 
-INSERT INTO criadores_contratam_funccriadores_contratam_func (cpf_criadores, cpf_funcionarios)
+INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794930', '08640794953');
-INSERT INTO criadores_contratam_funccriadores_contratam_func (cpf_criadores, cpf_funcionarios)
+INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794929', '08640794952');
-INSERT INTO criadores_contratam_funccriadores_contratam_func (cpf_criadores, cpf_funcionarios)
+INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794928', '08640794951');
-INSERT INTO criadores_contratam_funccriadores_contratam_func (cpf_criadores, cpf_funcionarios)
+INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794927', '08640794950');
-INSERT INTO criadores_contratam_funccriadores_contratam_func (cpf_criadores, cpf_funcionarios)
+INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794926', '08640794949');
-INSERT INTO criadores_contratam_funccriadores_contratam_func (cpf_criadores, cpf_funcionarios)
+INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794925', '08640794948');
-INSERT INTO criadores_contratam_funccriadores_contratam_func (cpf_criadores, cpf_funcionarios)
+INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794924', '08640794947');
-INSERT INTO criadores_contratam_funccriadores_contratam_func (cpf_criadores, cpf_funcionarios)
+INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794923', '08640794946');
-INSERT INTO criadores_contratam_funccriadores_contratam_func (cpf_criadores, cpf_funcionarios)
+INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794922', '08640794945');
-INSERT INTO criadores_contratam_funccriadores_contratam_func (cpf_criadores, cpf_funcionarios)
+INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794944', '08640794944');
 
 
@@ -176,7 +176,7 @@ VALUE ('ayrton santos', 'ayrton@hotmail.com', '44998220471', '951620');
 
 
 INSERT INTO compras (id_pedido, forma_pagamento, comprovante, nome_cliente)
-VALUE ('1234565', 'cartao de credito', '147258963', 'jhenyfeer polonio');
+VALUE ('1234565', 'cartao de credito', '147258963', 'andre lettrari');
 INSERT INTO compras (id_pedido, forma_pagamento, comprovante, nome_cliente)
 VALUE ('1236555', 'boleto', '1230256', 'enzo italiano');
 INSERT INTO compras (id_pedido, forma_pagamento, comprovante, nome_cliente)
@@ -234,7 +234,7 @@ INSERT INTO lojas (cnpj, endereco, contrato)
 VALUE ('84332989000120', 'maringa zona dois', '7896548522');
 INSERT INTO lojas (cnpj, endereco, contrato)
 VALUE ('44587990000181', 'rua das rosas sao paulo', '0022546820');
-INSERT INTO lojas (cnpj, produtosendereco, contrato)
+INSERT INTO lojas (cnpj, endereco, contrato)
 VALUE ('70492708000192', 'cruzeiro do sul sao paulo', '956532300');
 INSERT INTO lojas (cnpj, endereco, contrato)
 VALUE ('20539928000156', 'marechal tito sao paulo', '4512568966');
@@ -304,28 +304,28 @@ VALUE ('654125080', '08640794904', '04-06-00', 'lucas krachinski');
 INSERT INTO pessoa_fisica (rg, cpf, data_nascimento, nome)
 VALUE ('145698260', '08640794924', '29-04-06', 'thais falcao');
 INSERT INTO pessoa_fisica (rg, cpf, data_nascimento, nome)
-VALUE ('142536635', '08640794934', '24-03-01', 'jhenyfeer polonio');
+VALUE ('142536635', '08640794934', '24-03-01', 'joao moraski');
 
 INSERT INTO pessoa_juridica (cnpj, endereco, data_nascimento, nome)
-VALUE ('142536635', '08640794934', '24-03-01', 'ayrton santos');
+VALUE ('142536636', 'av tiradentes', '24-03-01', 'ayrton santos');
 INSERT INTO pessoa_juridica (cnpj, endereco, data_nascimento, nome)
-VALUE ('142536635', '08640794934', '24-03-01', 'rafael berti');
+VALUE ('142536637', 'rua licilio', '24-03-01', 'rafael berti');
 INSERT INTO pessoa_juridica (cnpj, endereco, data_nascimento, nome)
-VALUE ('142536635', '08640794934', '24-03-01', 'reginaldo silva');
+VALUE ('142536695', 'av flaviano melo', '24-03-01', 'reginaldo silva');
 INSERT INTO pessoa_juridica (cnpj, endereco, data_nascimento, nome)
-VALUE ('142536635', '08640794934', '24-03-01', 'rafael silva');
+VALUE ('142536655', 'av gaspar coqueiro', '24-03-01', 'rafael silva');
 INSERT INTO pessoa_juridica (cnpj, endereco, data_nascimento, nome)
-VALUE ('142536635', '08640794934', '24-03-01', 'vitor galafassi');
+VALUE ('142536635', 'av japao', '24-03-01', 'vitor galafassi');
 INSERT INTO pessoa_juridica (cnpj, endereco, data_nascimento, nome)
-VALUE ('142536635', '08640794934', '24-03-01', 'joao moraski');
+VALUE ('142536335', 'av brasil', '24-03-01', 'joao moraski');
 INSERT INTO pessoa_juridica (cnpj, endereco, data_nascimento, nome)
-VALUE ('142536635', '08640794934', '24-03-01', 'felipe arcanjo');
+VALUE ('142530635', 'rua campo mourao', '24-03-01', 'felipe arcanjo');
 INSERT INTO pessoa_juridica (cnpj, endereco, data_nascimento, nome)
-VALUE ('142536635', '08640794934', '24-03-01', 'breno silva');
+VALUE ('142536635', 'rua benedito rodrigues', '24-03-01', 'breno silva');
 INSERT INTO pessoa_juridica (cnpj, endereco, data_nascimento, nome)
-VALUE ('142536635', '08640794934', '24-03-01', 'andre lettrari');
+VALUE ('142436635', 'rua tupis', '24-03-01', 'andre lettrari');
 INSERT INTO pessoa_juridica (cnpj, endereco, data_nascimento, nome)
-VALUE ('142536635', '08640794934', '24-03-01', 'eduarda bassalobre');
+VALUE ('142236635', 'rua do centenario', '24-03-01', 'eduarda bassalobre');
 
 
 INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
@@ -351,7 +351,7 @@ VALUE ( 'Brasspress Transportes', 'reginaldo silva');
 
 
 INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
-VALUE ( 'ci5qhvrvhub', 'jhenyfeer polonio');
+VALUE ( 'ci5qhvrvhub', 'joao moraski');
 INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
 VALUE ( 'p2ce6w73kxf', 'breno silva');
 INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
