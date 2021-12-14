@@ -40,7 +40,6 @@ VALUE ('08640794952', '144868038', '4500');
 INSERT INTO funcionarios (CPF, RG, salario)
 VALUE ('08640794953', '144868039', '5000');
 
-
 INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794930', '08640794953');
 INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
@@ -61,7 +60,6 @@ INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794922', '08640794945');
 INSERT INTO criadores_contratam_func (cpf_criadores, cpf_funcionarios)
 VALUE ('08640794944', '08640794944');
-
 
 INSERT INTO suporte (n_protocolo, canal, tipo_atendimento)
 VALUE ('123456789', 'email', 'conta e fraude');
@@ -105,8 +103,6 @@ VALUE ('987654', 'email', 'segurança');
 INSERT INTO suporte (n_protocolo, canal, tipo_atendimento)
 VALUE ('951620', 'chat', 'rastrear pedido');
 
-
-
 INSERT INTO jogos (codigo_jogo, nome, tentativas)
 VALUE ('ci5qhvrvhub', 'recompensas diarias', '1');
 INSERT INTO jogos (codigo_jogo, nome, tentativas)
@@ -127,7 +123,6 @@ INSERT INTO jogos (codigo_jogo, nome, tentativas)
 VALUE ('8x94r8vvnhe', '7 erros', '3');
 INSERT INTO jogos (codigo_jogo, nome, tentativas)
 VALUE ('8x94r8vvnhf', 'carrinho fast', '3');
-
 
 INSERT INTO clientes (nome, email, telefone, n_protocolo)
 VALUE ('thaynara ribeiro', 'thaynararibeiro@hotmail.com', '99277712', '123456789');
@@ -171,10 +166,6 @@ VALUE ('rafael berti', 'berti@hotmail.com', '44996600471', '258147');
 INSERT INTO clientes (nome, email, telefone, n_protocolo)
 VALUE ('ayrton santos', 'ayrton@hotmail.com', '44998220471', '951620');
 
-
-
-
-
 INSERT INTO compras (id_pedido, forma_pagamento, comprovante, nome_cliente)
 VALUE ('1234565', 'cartao de credito', '147258963', 'andre lettrari');
 INSERT INTO compras (id_pedido, forma_pagamento, comprovante, nome_cliente)
@@ -216,9 +207,6 @@ INSERT INTO avaliacao (foto, nota, comentario, id_pedido)
 VALUE ('9jpeg', 9, 'veio tudo certo, só achei fraco a embalagem', 1236555);
 INSERT INTO avaliacao (foto, nota, comentario, id_pedido)
 VALUE ('10peg', 10, 'veio tudo certo', 1234565);
-
-
-
 
 INSERT INTO lojas (cnpj, endereco, contrato)
 VALUE ('98404598000189', 'rua do centenario parana', '6569985622');
@@ -283,8 +271,6 @@ VALUE ('Transmedeiros', 'carreta', 'saco');
 INSERT INTO transportadoras (nome_empresa, veiculos, embalagem)
 VALUE ('Sul Brasil', 'caminhao', 'caixa');
 
-
-
 INSERT INTO pessoa_fisica (rg, cpf, data_nascimento, nome)
 VALUE ('144868030', '08640793944', '04-04-01', 'miriam mullati');
 INSERT INTO pessoa_fisica (rg, cpf, data_nascimento, nome)
@@ -327,7 +313,6 @@ VALUE ('142436635', 'rua tupis', '24-03-01', 'andre lettrari');
 INSERT INTO pessoa_juridica (cnpj, endereco, data_nascimento, nome)
 VALUE ('142236635', 'rua do centenario', '24-03-01', 'eduarda bassalobre');
 
-
 INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
 VALUE ( 'Sul Brasil', 'eduarda bassalobre');
 INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
@@ -348,7 +333,6 @@ INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
 VALUE ( 'Jamef Transportes', 'thais falcao');
 INSERT INTO transp_envia_para_clientes (nome_transp, nome_cliente)
 VALUE ( 'Brasspress Transportes', 'reginaldo silva');
-
 
 INSERT INTO clientes_jogam_jogos (cod_jogo, nome_cliente)
 VALUE ( 'ci5qhvrvhub', 'joao moraski');
