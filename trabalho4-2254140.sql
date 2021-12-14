@@ -31,8 +31,6 @@ n_protocolo bigint,
 FOREIGN KEY (n_protocolo) REFERENCES SUPORTE(n_protocolo)
 );
 
-
-
 create table COMPRAS(
 id_pedido integer primary key not null, 
 forma_pagamento varchar(30), 
@@ -237,8 +235,6 @@ VALUE ('987654', 'email', 'segurança');
 INSERT INTO suporte (n_protocolo, canal, tipo_atendimento)
 VALUE ('951620', 'chat', 'rastrear pedido');
 
-
-
 INSERT INTO jogos (codigo_jogo, nome, tentativas)
 VALUE ('ci5qhvrvhub', 'recompensas diarias', '1');
 INSERT INTO jogos (codigo_jogo, nome, tentativas)
@@ -303,10 +299,6 @@ VALUE ('rafael berti', 'berti@hotmail.com', '44996600471', '258147');
 INSERT INTO clientes (nome, email, telefone, n_protocolo)
 VALUE ('ayrton santos', 'ayrton@hotmail.com', '44998220471', '951620');
 
-
-
-
-
 INSERT INTO compras (id_pedido, forma_pagamento, comprovante, nome_cliente)
 VALUE ('1234565', 'cartao de credito', '147258963', 'andre lettrari');
 INSERT INTO compras (id_pedido, forma_pagamento, comprovante, nome_cliente)
@@ -348,9 +340,6 @@ INSERT INTO avaliacao (foto, nota, comentario, id_pedido)
 VALUE ('9jpeg', 9, 'veio tudo certo, só achei fraco a embalagem', 1236555);
 INSERT INTO avaliacao (foto, nota, comentario, id_pedido)
 VALUE ('10peg', 10, 'veio tudo certo', 1234565);
-
-
-
 
 INSERT INTO lojas (cnpj, endereco, contrato)
 VALUE ('98404598000189', 'rua do centenario parana', '6569985622');
@@ -414,8 +403,6 @@ INSERT INTO transportadoras (nome_empresa, veiculos, embalagem)
 VALUE ('Transmedeiros', 'carreta', 'saco');
 INSERT INTO transportadoras (nome_empresa, veiculos, embalagem)
 VALUE ('Sul Brasil', 'caminhao', 'caixa');
-
-
 
 INSERT INTO pessoa_fisica (rg, cpf, data_nascimento, nome)
 VALUE ('144868030', '08640793944', '04-04-01', 'miriam mullati');
@@ -571,7 +558,6 @@ select t.nome_empresa
 from transportadoras t
 where t.embalagem = 'caixa');
 
-
 --  cpf dos funcionarios que trabalham por chat no atendimento de rastrear pedidos
 select f.cpf_funcionario
 from func_trabalham_em_sup f
@@ -622,7 +608,7 @@ where pj.nome like '%silva%'
 );
 
 
--- cpf dos criadores que contratam funcionarios que recebem mais de 3k
+-- cpf dos criadores que contratam funcionarios que recebem um salario maior ou igual a 4500k
 
 select cc.cpf_funcionarios
 from criadores_contratam_func cc
