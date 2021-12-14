@@ -1,4 +1,3 @@
-
 create table CRIADORES (
 CPF char(11) primary key, 
 capital integer, 
@@ -18,7 +17,7 @@ tipo_atendimento varchar(20)
 );
 
 create table JOGOS (
-codigo_jogo integer primary key, 
+codigo_jogo varchar(30) primary key, 
 nome varchar(20), 
 tentativas integer
 );
@@ -26,7 +25,7 @@ tentativas integer
 create table CLIENTES (
 nome varchar(25) primary key not null, 
 email varchar(30), 
-telefone integer,
+telefone bigint,
 n_protocolo bigint,
 FOREIGN KEY (n_protocolo) REFERENCES SUPORTE(n_protocolo)
 );
@@ -48,7 +47,7 @@ contrato bigint
 );
 
 create table PRODUTOS (
-id_produto integer primary key, 
+id_produto bigint primary key, 
 categoria varchar(20), 
 preco float,
 id_compra integer,
@@ -107,7 +106,7 @@ primary key(nome_transp, nome_cliente)
 );
 
 create table CLIENTES_JOGAM_JOGOS(
-cod_jogo integer,
+cod_jogo varchar(30),
 nome_cliente varchar(25),
 FOREIGN KEY(cod_jogo) REFERENCES JOGOS(codigo_jogo),
 FOREIGN KEY(nome_cliente) REFERENCES CLIENTES(NOME),
@@ -115,7 +114,7 @@ primary key(cod_jogo, nome_cliente)
 );
 
 create table FUNC_DESENVOLVEM_JOGOS(
-cod_jogo integer,
+cod_jogo varchar(30),
 cpf_funcionario char(11),
 FOREIGN KEY(cpf_funcionario) REFERENCES FUNCIONARIOS(CPF),
 FOREIGN KEY(cod_jogo) REFERENCES JOGOS(codigo_jogo),
